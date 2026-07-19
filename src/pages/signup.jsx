@@ -1,0 +1,53 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import{User} from 'lucide-react'
+
+const SignUp = () => {
+  return (
+    <div className='grid grid-cols-2'>
+      <div className='h-screen bg-linear-to-t from-blue-700 to-indigo-500 flex flex-col items-center justify-center'>
+        <div className='w-32 h-32 bg-rose-600 flex items-center justify-center rounded-full animate__animated animate__slideInDown'>
+          <User className='w-16 h-16 text-white' />
+        </div>
+        <h1 className='text-8xl font-bold text-white animate__animate animate__slideInDown '>
+          SignUp
+        </h1>
+        <p className='p-12 text-center text-white/80 flex animate__animated animate__fadeIn'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci illo commodi, ipsa eius distinctio quos neque quo minus praesentium iste delectus! Provident magnam aspernatur ab officiis inventore necessitatibus qui distinctio!</p>
+      </div>
+      <div className='flex items-center justify-center flex-col'>
+        <form className='w-lg flex flex-col'>
+          <input placeholder='fullname'
+            name='Fullname'
+            className='border-b border-b-gray-300 py-3 focus:outline-none focus:border-b-blue-600 focus:border-b-3 focus:placeholder-blue-600 focus:font-medium'
+            required
+          />
+          <input placeholder='Email'
+            name='EmailId'
+            className='border-b border-b-gray-300 py-3 focus:outline-none focus:border-b-blue-600 focus:border-b-3 focus:placeholder-blue-600 focus:font-medium'
+            required
+          />
+          <input
+            name="Password"
+            type="password"
+            placeholder='password'
+            className='border-b border-b-gray-300 py-3 focus:outline-none focus:border-b-blue-600 focus:border-b-3 focus:placeholder-blue-600 focus:font-medium'
+            required
+          />
+
+          <button className='bg-linear-to-r from-blue-500 to-indigo-500 text-white font-medium py-3 rounded-lg'>Sign Up</button>
+        </form>
+        <div className="mt-3 text-black/60">
+  Already have an account?{" "}
+  <Link
+    to="/signup"
+    className="text-blue-500 font-medium hover:underline hover:text-blue-600"
+  >
+    Sign Up
+  </Link>
+</div>
+      </div>
+    </div>
+  )
+}
+
+export default SignUp
