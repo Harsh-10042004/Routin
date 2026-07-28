@@ -1,49 +1,57 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Mousewheel } from 'swiper/modules'
-
+import image1 from '../assets/image1.jpg'
+import image2 from '../assets/image2.jpg'
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.jpg'
+import image5 from '../assets/image5.png'
+import image6 from '../assets/image6.jpg'
+import image7 from '../assets/image7.jpg'
+import image8 from '../assets/image8.jpg'
+import studyphoto from '../assets/studyphoto.avif'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { Bell, Copy, Home, icons, LayoutDashboard, Play, Settings2 } from 'lucide-react'
-const courses =[
+const courses = [
   {
-    image:"/image1.jpg",
-    name:"React Course",
+    image: image1,
+    name: "React Course",
     price: 3000
   },
-   {
-    image:"/image2.jpg",
-    name:"Node.js Course",
+  {
+    image: image2,
+    name: "Node.js Course",
     price: 8000
   },
-   {
-    image:"/image8.jpg",
-    name:"Fronted Course",
+  {
+    image: image8,
+    name: "Frontend Course",
     price: 5000
   },
-   {
-    image:"/image4.jpg",
-    name:"Backend Course",
+  {
+    image: image4,
+    name: "Backend Course",
     price: 6000
   },
-   {
-    image:"/image8.jpg",
-    name:"Special combo Course",
+  {
+    image: image5,
+    name: "Special Combo Course",
     price: 10000
   },
-   {
-    image:"/image6.jpg",
-    name:"React Course Certificate",
+  {
+    image: image6,
+    name: "React Course Certificate",
     price: 1000
   },
-   {
-    image:"/image7.jpg",
-    name:"React With Combo Course",
+  {
+    image: image7,
+    name: "React With Combo Course",
     price: 30000
   },
-   {
-    image:"/image8.jpg",
-    name:"React With AI Course ",
+  {
+    image: image8,
+    name: "React With AI Course",
     price: 30000
   },
 ]
